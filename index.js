@@ -42,7 +42,7 @@ app.post('/api/chat', async (req, res) => {
                     "Authorization": `Bearer ${process.env.OPENROUTER_API_KEY}`
                 },
                 body: JSON.stringify({
-                    model: "inclusionai/ling-3.2-flash:free",
+                    model: "baidu/ernie-5.5-flash-preview:free",
                     messages : messages,
                     temperature: 0.7,
                     max_tokens: 1000,
