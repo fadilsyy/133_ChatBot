@@ -9,3 +9,6 @@ const PORT = 3000;
 app.use(express.json());
 app.use(express.urlencoded("public"));
 
+app.get('/', (req, res) => {
+    res.redirect("/index.html");
+});
